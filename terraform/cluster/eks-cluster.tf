@@ -7,6 +7,7 @@ module "eks" {
 
   tags = {
     Environment = var.env_name
+    email       = "dmensah"
   }
 
   vpc_id = module.vpc.vpc_id
