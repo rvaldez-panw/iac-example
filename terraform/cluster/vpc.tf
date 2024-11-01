@@ -19,6 +19,7 @@ module "vpc" {
 
   tags = {
     "kubernetes.io/cluster/${var.env_name}" = "shared"
+    email                                   = "dmensah"
   }
 
   public_subnet_tags = {

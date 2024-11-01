@@ -12,6 +12,9 @@ resource "aws_security_group" "snyk_security_group_one" {
       "10.0.0.0/8",
     ]
   }
+  tags = {
+    email = "dmensah"
+  }
 }
 
 resource "aws_security_group" "snyk_security_group_two" {
@@ -27,6 +30,9 @@ resource "aws_security_group" "snyk_security_group_two" {
     cidr_blocks = [
       "192.168.0.0/16",
     ]
+  }
+  tags = {
+    email = "dmensah"
   }
 }
 
@@ -45,5 +51,8 @@ resource "aws_security_group" "snyk_security_group_all" {
       "172.16.0.0/12",
       "192.168.0.0/16",
     ]
+  }
+  tags = {
+    email = "dmensah"
   }
 }
